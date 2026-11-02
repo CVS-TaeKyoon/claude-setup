@@ -13,5 +13,5 @@ Windows에서 Claude Code를 팀 공통 환경으로 설정하기 위한 자료�
 설정을 바꿨다면 `.claude/` 내용을 다시 압축해 새 태그(예: `v1.0.1`)로 릴리스를 만들고 `.claude.zip`을 첨부하세요.
 
 ```bash
-tea releases create --login crevis-gitea --repo tkkim/claude-setup --tag v1.0.1 --title "팀 설정 묶음 v1.0.1" --asset .claude.zip
+tea releases create --login crevis-gitea --repo tkkim/claude-setup --tag v1.0.1 --title "claude 설정 설피 파일" --asset .claude.zip
 ```
