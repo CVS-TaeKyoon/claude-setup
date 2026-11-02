@@ -9,9 +9,15 @@ Windows에서 Claude Code를 팀 공통 환경으로 설정하기 위한 자료�
 
 ## 배포
 
-프롬프트는 [Releases](http://192.168.54.50:3000/tkkim/claude-setup/releases)의 **최신 릴리스**에 첨부된 `.claude.zip`을 내려받습니다.
-설정을 바꿨다면 `.claude/` 내용을 다시 압축해 새 태그(예: `v1.0.1`)로 릴리스를 만들고 `.claude.zip`을 첨부하세요.
+프롬프트는 [Releases](https://github.com/CVS-TaeKyoon/claude-setup/releases)의 **최신 릴리스**에 첨부된 `claude.zip`을 로그인 없이 내려받습니다.
+
+```
+https://github.com/CVS-TaeKyoon/claude-setup/releases/latest/download/claude.zip
+```
+
+설정을 바꿨다면 `.claude/` 내용을 다시 압축해 `.claude.zip`을 갱신하고, 새 태그(예: `v1.0.1`)로 릴리스를 만들어 **`claude.zip`이라는 이름으로** 첨부하세요.
+GitHub는 `.`으로 시작하는 첨부 파일 이름을 바꾸므로, 첨부할 때 이름 앞의 `.`을 뺍니다.
 
 ```bash
-tea releases create --login crevis-gitea --repo tkkim/claude-setup --tag v1.0.1 --title "claude 설정 설치 파일" --asset .claude.zip
+cp .claude.zip claude.zip && gh release create v1.0.1 claude.zip --title "claude 설정 설치 파일" --notes "변경 내용" && rm claude.zip
 ```
