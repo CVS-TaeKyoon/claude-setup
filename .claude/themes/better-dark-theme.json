@@ -1,0 +1,8 @@
+{
+  "name": "Better Dark Theme",
+  "base": "dark",
+  "overrides": {
+    "userMessageBackground": "#164e63",
+    "subtle": "#fef08a"
+  }
+}
