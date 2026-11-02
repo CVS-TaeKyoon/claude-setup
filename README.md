@@ -1,5 +1,10 @@
 # Claude Code 셋업 (Windows)
 
+> ### 👉 [새 사용자 설치 프롬프트 바로가기](prompts/windows-claude-code-customization.ko.md)
+>
+> Claude Desktop만 설치된 PC에서, 링크한 문서의 코드 블록 전체를 복사해 Claude Desktop 새 채팅(Code 화면)에 붙여 넣으세요.
+> Claude Code 설치부터 Statusline·테마·플러그인 설정까지 AI가 자동으로 진행합니다. 직접 할 일은 Claude 로그인과 관리자 권한 승인뿐입니다.
+
 Windows에서 Claude Code를 팀 공통 환경으로 설정하기 위한 자료입니다.
 
 - `Claude Code 셋업 가이드 Windows.md` — 수동 셋업 단계별 가이드
